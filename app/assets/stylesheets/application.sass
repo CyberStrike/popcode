@@ -43,11 +43,11 @@ a
 
 html
   height: 100%
-  background-color: #333
+  background-color: #7d0000
 
 body
   height: 100%
-  background-color: #333
+  background-color: #7d0000
   color: #fff
   text-align: center
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
@@ -82,9 +82,9 @@ body
   margin-top: 10px
   margin-bottom: 10px
 
-.masthead-nav >
-li
+.masthead-nav > li
   display: inline-block
+
   + li
     margin-left: 20px
   > a
@@ -93,18 +93,17 @@ li
     font-size: 16px
     font-weight: bold
     color: #fff
-    /* IE8 proofing
     color: rgba(255, 255, 255, 0.75)
     border-bottom: 2px solid transparent
     &:hover, &:focus
       background-color: transparent
       border-bottom-color: rgba(255, 255, 255, 0.25)
-  .active > a
+.masthead-nav > li.active > a
+  color: #fff
+  border-bottom-color: #fff
+  &:hover, &:focus
     color: #fff
     border-bottom-color: #fff
-    &:hover, &:focus
-      color: #fff
-      border-bottom-color: #fff
 
 @media (min-width: 768px)
   .masthead-brand
