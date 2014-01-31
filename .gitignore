@@ -1,0 +1,95 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+## generic files to ignore
+# ######################
+*~
+!.git/hooks/post-merge
+*.lock
+*.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+*.swp
+*.out
+dump.rdb
+ehthumbs.db
+Thumbs.db
+
+## Logs and databases #
+# ######################
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+## rails specific
+# ######################
+config/database.yml
+log/*
+tmp/*
+/log/*.log
+/tmp
+
+## cakephp specific
+# ######################
+/lib/Cake/Console/Templates/skel/tmp/
+/app/tmp/cache/persistent/*
+/app/tmp/cache/queries/*
+/app/tmp/cache/models/*
+/app/tmp/cache/views/*
+/app/tmp/cache/*
+/app/tmp/logs/*
+/vendors/*
+/build/*
+/dist/*
+/tags/*
+
+## java specific
+# ######################
+*.class
+
+## netbeans ignore personal stuff
+# ######################
+nbproject/private/
+
+## python specific
+# ######################
+*.pyc
+
+## xcode specific
+# ######################
+build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.perspective
+*.perspectivev3
+*~.nib
+
+## ignore private workspace stuff added by Xcode4
+# ######################
+xcuserdata
+project.xcworkspace
+
+## ignore the codeigniter log files
+# ######################
+application/logs/*
+
+## PHPStorm
+# ######################
+.idea
+
+## eclipse
+# ######################
+.settings
+.settings/*
+.project
+.buildpath
