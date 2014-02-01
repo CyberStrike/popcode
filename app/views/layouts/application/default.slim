@@ -23,12 +23,27 @@ html lang="en"
     | <script src="js/respond.js"></script>
 
   body
-
-    = yield
-
-    .cover-container
-      .mastfoot
-        .inner
-          p Copyright © 2014 PopCode. All rights reserved.
+    Wrappers
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              h3.masthead-brand PopCode
+              ul.nav.masthead-nav
+                li.active
+                  a href="#" Home
+                li
+                  a href="#" Features
+                li
+                  a href="#" Team
+                li
+                  a href="#" Hire Us
+        // Yield
+        = yield
+        .cover-container
+          .mastfoot
+            .inner
+              p Copyright © 2014 PopCode. All rights reserved.
 
     = javascript_include_tag 'application'
