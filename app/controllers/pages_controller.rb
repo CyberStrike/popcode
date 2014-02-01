@@ -8,7 +8,7 @@ class PagesController < PublicController
     end
   end
 
-  def comming_soon
+  def coming_soon
 
   end
 end
