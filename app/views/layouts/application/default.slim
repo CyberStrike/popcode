@@ -23,5 +23,12 @@ html lang="en"
     | <script src="js/respond.js"></script>
 
   body
+
     = yield
+
+    .cover-container
+      .mastfoot
+        .inner
+          p Copyright © 2014 PopCode. All rights reserved.
+
     = javascript_include_tag 'application'
