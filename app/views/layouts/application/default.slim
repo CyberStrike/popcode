@@ -39,12 +39,13 @@ html lang="en"
               /    a href="#" Team
               /  li
               /    a href="#" Hire Us
-              a.hire-us href="#" Hire Us
-        // Yield
-        = yield
+              a.hire-us href="hireus" Hire Us
+              = link_to 'hire_us'
+                | Hire Us
+        == yield
         .cover-container
           .mastfoot
             .inner
               p Copyright © 2014 PopCode. All rights reserved.
 
-    = javascript_include_tag 'application'
+    == javascript_include_tag 'application'

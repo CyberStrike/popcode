@@ -11,4 +11,5 @@ class PagesController < PublicController
   def coming_soon
 
   end
+
 end
