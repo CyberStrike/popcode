@@ -2,8 +2,7 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,  or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
@@ -61,7 +60,7 @@ body
   display: table
   width: 100%
   height: 100%
-  /* For at least Firefox
+  // For at least Firefox
   min-height: 100%
 
 .site-wrapper-inner
@@ -72,13 +71,12 @@ body
   margin-left: auto
   margin-right: auto
 
-/* Padding for spacing
+// Padding for spacing
 
 .inner
   padding: 30px
 
-/*
- * Header
+// Header
 
 .masthead-brand
   margin-top: 10px
@@ -109,8 +107,6 @@ body
     color: #fff
     border-bottom-color: #fff
 
-
-
 .btn-pop
   @extend .btn
   @extend .btn-default
@@ -122,10 +118,6 @@ body
     color: $bg-color
     border: 2px transparent $bg-color
 
-
-
-
-
 .inner > .hire-us
   @extend .btn-pop
   @extend .btn-lg
@@ -135,16 +127,13 @@ body
   right: 0
   padding: 10px 20px
 
-
-
 @media (min-width: 768px)
   .masthead-brand
     float: left
   .masthead-nav
     float: right
 
-/*
- * Cover
+/*Cover
 
 .cover
   padding: 0 20px
@@ -153,35 +142,94 @@ body
     padding: 10px 20px
 
 
-/*
- * Footer
+/*Footer
 
 .mastfoot
   color: #999
   /* IE8 proofing
   color: rgba(255, 255, 255, 0.5)
 
-/*
- * Affix and center
+/* Affix and center
 
 @media (min-width: 768px)
-  /* Pull out the header and footer
   .masthead
     position: fixed
     top: 0
   .mastfoot
     position: fixed
     bottom: 0
-  /* Start the vertical centering
   .site-wrapper-inner
     vertical-align: middle
-  /* Handle the widths
   .masthead, .mastfoot, .cover-container
     width: 100%
-/* Must be percentage or pixels for horizontal alignment
 
 @media (min-width: 992px)
   .masthead, .mastfoot, .cover-container
     width: 700px
 
 
+// Form
+
+.form-control
+  background: $bg-color
+  color: $txt-color
+  border-bottom: 2px dotted white 
+  border-top: none
+  border-left: none
+  border-right: none
+  border-radius: 0px
+  font-size: 140%
+  text-transform: Capitalize
+  -webkit-box-shadow: none
+  box-shadow: none
+  padding: 30px 10px
+  &:focus
+    -webkit-box-shadow: none
+    box-shadow: none
+  &::-webkit-input-placeholder
+    color: $txt-color
+  &:-moz-placeholder 
+    color: $txt-color
+  &::-moz-placeholder
+    /* Firefox 19+
+    color: $txt-color
+  &:-ms-input-placeholder
+    color: $txt-color
+
+.input-group-addon
+  border: 2px solid white
+  background: white
+  color: $txt-color
+
+.form-gap
+  padding: 30px 0px
+
+.say-hello
+  @extend .btn-pop
+  @extend .btn-lg
+  padding: 10px 20px
+  letter-spacing: 2px
+
+
+// Form 2
+
+.form-control2
+  background: darken($bg-color, 10%)
+  color: $txt-color
+  border: none
+  font-size: 140%
+  text-transform: Capitalize
+  -webkit-box-shadow: none
+  box-shadow: none
+  &:focus
+    -webkit-box-shadow: none
+    box-shadow: none
+  &::-webkit-input-placeholder
+    color: $txt-color
+  &:-moz-placeholder 
+    color: $txt-color
+  &::-moz-placeholder
+    /* Firefox 19+
+    color: $txt-color
+  &:-ms-input-placeholder
+    color: $txt-color

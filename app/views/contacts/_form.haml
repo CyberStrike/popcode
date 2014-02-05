@@ -1,0 +1,11 @@
+- if flash[:notice]
+  .notice= flash[:notice]
+
+= simple_form_for contact do |f|
+  = f.input :first_name, label: false, input_html: { class: 'form-control2', placeholder: 'First Name', 'required' => true }
+  = f.input :last_name, label: false, input_html: { class: 'form-control2', placeholder: 'Last Name', 'required'=> true}
+  = f.input :email, label: false, input_html: { class: 'form-control2', placeholder: 'Email', 'required' => true }
+  = f.input :phone, label: false, input_html: { class: 'form-control2', placeholder: 'Phone' }
+  = f.input :comment, label: false, input_html: { class: 'form-control2', placeholder: 'Message' , rows: "5", cols: "100"}
+  .form-gap
+    = f.submit 'Say Hello', class: 'say-hello'

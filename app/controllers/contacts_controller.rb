@@ -1,13 +1,24 @@
 class ContactsController < PublicController
-  expose(:contacts)
-  expose(:contact)
+  expose(:contacts){ Contact.order("id DESC").scoped{} }
+  expose(:contact, attributes: :contact_params)
 
   def create
     if contact.save
-      flash[:notice] = t(:we_will_contact_you_shortly)
+      flash[:notice] = "Thank you, for interest. We will be in contact shortly."
       redirect_to contact_us_path
     else
       render :new
     end
+  end
+
+  private
+  def contact_params
+    params.require(:contact).permit(
+      :first_name,
+      :last_name,
+      :email,
+      :phone,
+      :comment
+    )
   end
 end
